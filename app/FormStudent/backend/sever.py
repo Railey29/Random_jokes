@@ -2,7 +2,7 @@ from flask import Flask, jsonify, request, json
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app , resources={r"/studentForm" : {"origins" : "https://vercel.com/railey29s-projects/for-student"}})
+CORS(app , resources={r"/studentForm" : {"origins" : ["https://vercel.com/railey29s-projects/for-student","http://localhost:3000"]}})
 
 @app.route("/studentForm", methods=["POST"])  # I-limit ang method sa POST lamang
 def get_data():

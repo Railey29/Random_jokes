@@ -62,9 +62,6 @@ function FormStudent() {
           course: userCourse,
         }
       );
-
-      const data = await response.json();
-
       setData(response.data); // ifefetch nung frontEnd yung Data After ma process ng Flask And ito yung kukuha ng mga data ni user
     } catch (error) {
       console.error("Have an Error!", error);
