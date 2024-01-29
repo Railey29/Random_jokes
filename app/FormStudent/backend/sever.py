@@ -2,9 +2,9 @@ from flask import Flask, jsonify, request, json
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/studentForm": {"origins": "https://for-student-gt2errli3-railey29s-projects.vercel.app"}})
+CORS(app)
 
-@app.route("/studentForm", methods=["GET", "POST"])
+@app.route("//for-student-taupe.vercel.app", methods=["POST"])
 def get_data():
     if request.method == "POST":
         req_user_data = request.get_json() #Reqeust to the frontend

@@ -55,7 +55,7 @@ function FormStudent() {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
       const response = await axios.post(
-        "https://for-student-taupe.vercel.app/studentForm",
+        "https://for-student-taupe.vercel.app",
         {
           // Add Data you want to pass into Flask
           // key , value(ito yung Variable sa useState)
