@@ -1,2 +1,0 @@
-{"address": "sss", "course": "BSCPE", "name": "aa"}
-{"address": "aa", "course": "BSIT", "name": "aa"}

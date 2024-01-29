@@ -55,7 +55,7 @@ function FormStudent() {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
       const response = await axios.post(
-        "http://192.168.5.213:5000/studentForm", // or use the correct URL for your Flask server
+        "https://192.168.5.213:5000/studentForm", // or use the correct URL for your Flask server
         {
           name: userInput,
           address: userAddress,
