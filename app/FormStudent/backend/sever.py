@@ -1,6 +1,10 @@
 from flask import Flask, jsonify, request, json
+from flask_cors import CORS
+
 app = Flask(__name__)
-@app.route("/studentForm", methods=["POST"])
+CORS(app)
+
+@app.route("/studentForm", methods=["POST"])  # I-limit ang method sa POST lamang
 def get_data():
     if request.method == "POST":
         req_user_data = request.get_json()
@@ -21,7 +25,7 @@ def get_data():
 
         return jsonify(final_data_get)
     else:
-        return "Hello from GET request!"
+        return "Method Not Allowed", 405  # Ito ay isang POST endpoint, hindi dapat tinatanggap ang GET request.
 
 if __name__ == '__main__':
     app.run(debug=True)
