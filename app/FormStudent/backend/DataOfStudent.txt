@@ -1,3 +1,2 @@
-{"address": "asdasd", "course": "BSIT", "name": "asdasd"}
-{"address": "aa", "course": "BSIT", "name": "aaa"}
-{"address": "asdasd", "course": "BACOOM", "name": "asdasd"}
+{"address": "sss", "course": "BSCPE", "name": "aa"}
+{"address": "aa", "course": "BSIT", "name": "aa"}
