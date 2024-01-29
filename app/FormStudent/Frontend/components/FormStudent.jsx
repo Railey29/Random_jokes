@@ -60,11 +60,6 @@ function FormStudent() {
           name: userInput,
           address: userAddress,
           course: userCourse,
-        },
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
         }
       );
 
