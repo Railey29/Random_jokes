@@ -1,6 +1,7 @@
-import React from "react";
+// global-style.js
 
-const GlobalStyle = () => (
+// Assign the arrow function to a variable before exporting
+const globalStyle = () => (
   <style jsx global>{`
     body {
       padding: 0;
@@ -10,4 +11,7 @@ const GlobalStyle = () => (
   `}</style>
 );
 
-export default GlobalStyle;
+// Add a display name to your React component
+globalStyle.displayName = "GlobalStyle";
+
+export default globalStyle;
