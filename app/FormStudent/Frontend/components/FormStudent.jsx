@@ -54,17 +54,19 @@ function FormStudent() {
     try {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
-      const response = await fetch("http://127.0.0.1:5000/studentForm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const response = await axios.post(
+        "http://127.0.0.1:5000/studentForm", // or use the correct URL for your Flask server
+        {
           name: userInput,
           address: userAddress,
           course: userCourse,
-        }),
-      });
+        },
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       const data = await response.json();
 
