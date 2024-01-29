@@ -1,0 +1,3 @@
+{"address": "asdasd", "course": "BSIT", "name": "asdasd"}
+{"address": "aa", "course": "BSIT", "name": "aaa"}
+{"address": "asdasd", "course": "BACOOM", "name": "asdasd"}

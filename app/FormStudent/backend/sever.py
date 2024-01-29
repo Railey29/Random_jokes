@@ -27,4 +27,4 @@ def get_data():
         return "Method Not Allowed", 405  # Ito ay isang POST endpoint, hindi dapat tinatanggap ang GET request.
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
