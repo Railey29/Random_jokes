@@ -1,6 +1,6 @@
 from flask import Flask, jsonify, request, json
 app = Flask(__name__)
-@app.route("/studentForm", methods=["GET" , "POST"])
+@app.route("/studentForm", methods=["POST"])
 def get_data():
     if request.method == "POST":
         req_user_data = request.get_json()
