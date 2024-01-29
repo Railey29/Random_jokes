@@ -2,12 +2,12 @@ from flask import Flask, jsonify, request, json
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/": {"origins": "https://for-student-taupe.vercel.app"}})
 
-@app.route("//for-student-taupe.vercel.app", methods=["POST"])
+@app.route("/", methods=["POST"])
 def get_data():
     if request.method == "POST":
-        req_user_data = request.get_json() #Reqeust to the frontend
+        req_user_data = request.get_json()
         nameData = req_user_data.get("name", "")
         addressData = req_user_data.get("address", "")
         courseData = req_user_data.get("course")
@@ -18,8 +18,6 @@ def get_data():
             "course": courseData
         }
 
-
-        # Logic To DataBase
         txt_file = "D:\\Programming Projects\\my-nextjs-app\\app\\FormStudent\\backend\\DataOfStudent.txt"
         with open(txt_file, 'a') as file:
             text_to_append = json.dumps(final_data_get) + "\n"
@@ -27,7 +25,6 @@ def get_data():
 
         return jsonify(final_data_get)
     else:
-        # Handle GET request (if needed)
         return "Hello from GET request!"
 
 if __name__ == '__main__':
