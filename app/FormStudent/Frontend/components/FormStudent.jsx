@@ -32,7 +32,7 @@ function FormStudent() {
     setUserInput("");
     setUserAddress("");
     setCourse("BSIT");
-    //setData({}); // reset the data getting of user fetching the respones
+    setData({}); // reset the data getting of user fetching the respones
   }; // under or ito yung magyayari sa lahat ng HandleSubmit or lahat ng mangyayari pag nag submit ka
   // End of Handle Submit
 
