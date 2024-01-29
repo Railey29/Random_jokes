@@ -2,7 +2,6 @@ from flask import Flask, jsonify, request, json
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, resources={r"/": {"origins": "https://for-student-taupe.vercel.app"}})
 
 @app.route("/studentForm", methods=["POST"])
 def get_data():
