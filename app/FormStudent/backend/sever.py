@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app, resources={r"/": {"origins": "https://for-student-taupe.vercel.app"}})
 
-@app.route("/", methods=["POST"])
+@app.route("/studentForm", methods=["POST"])
 def get_data():
     if request.method == "POST":
         req_user_data = request.get_json()
