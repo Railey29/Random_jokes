@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  background-color: #dfe8e1;
+  width: 30%;
+  height: 40%;
+  border-radius: 15px;
+}
+.title {
+  position: absolute;
+  left: 33%;
+  top: 2%;
+  letter-spacing: 3px;
+}
+
+.get_data {
+  position: relative;
+  left: 32%;
+  top: 60px;
+}
+
+/*Labels*/
+.name {
+  position: absolute;
+  left: 60px;
+  letter-spacing: 1px;
+}
+.address {
+  position: absolute;
+  left: 60px;
+  letter-spacing: 1px;
+}
+.course {
+  position: absolute;
+  left: 60px;
+  letter-spacing: 1px;
+}
+
+/*Forms*/
+.UserName {
+  height: 30px;
+  margin-top: 5px;
+}
+.UserAddress {
+  height: 30px;
+  margin-top: 5px;
+}
+.ChoicesCourse {
+  position: absolute;
+  left: 50px;
+  height: 30px;
+  margin-top: 5px;
+}
+.submitButton {
+  position: absolute;
+  left: 45px;
+  top: 115%;
+  height: 30px;
+}
+
+.listed {
+  position: absolute;
+  left: 25%;
+  top: 85%;
+}
