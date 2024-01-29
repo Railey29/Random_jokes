@@ -7,7 +7,7 @@ CORS(app)
 @app.route("/studentForm", methods=["GET", "POST"])
 def get_data():
     if request.method == "POST":
-        req_user_data = request.json #Reqeust to the frontend
+        req_user_data = request.get_json() #Reqeust to the frontend
         nameData = req_user_data.get("name", "")
         addressData = req_user_data.get("address", "")
         courseData = req_user_data.get("course")

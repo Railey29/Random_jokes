@@ -32,6 +32,7 @@ function FormStudent() {
     setUserInput("");
     setUserAddress("");
     setCourse("BSIT");
+    setData({}); // reset the data getting of user fetching the respones
   }; // under or ito yung magyayari sa lahat ng HandleSubmit or lahat ng mangyayari pag nag submit ka
   // End of Handle Submit
 
@@ -75,7 +76,7 @@ function FormStudent() {
         <form onSubmit={handleSubmit} className={style.get_data}>
           <label className={style.name}>Name</label>
           <br />
-          <input  
+          <input
             type="name"
             placeholder="Please Enter Your Name"
             className={style.UserName}
