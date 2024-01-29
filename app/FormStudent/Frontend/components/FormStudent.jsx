@@ -54,13 +54,16 @@ function FormStudent() {
     try {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
-      const response = await axios.post("http://127.0.0.1:5000/studentForm", {
-        // Add Data you want to pass into Flask
-        // key , value(ito yung Variable sa useState)
-        name: userInput,
-        address: userAddress,
-        course: userCourse,
-      });
+      const response = await axios.post(
+        "https://for-student-taupe.vercel.app/",
+        {
+          // Add Data you want to pass into Flask
+          // key , value(ito yung Variable sa useState)
+          name: userInput,
+          address: userAddress,
+          course: userCourse,
+        }
+      );
       setData(response.data); // ifefetch nung frontEnd yung Data After ma process ng Flask And ito yung kukuha ng mga data ni user
     } catch (error) {
       console.error("Have an Error!");

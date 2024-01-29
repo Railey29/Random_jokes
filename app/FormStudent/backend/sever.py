@@ -4,7 +4,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/studentForm", methods=["GET", "POST"])
+@app.route("/", methods=["GET", "POST"])
 def get_data():
     if request.method == "POST":
         req_user_data = request.get_json() #Reqeust to the frontend
