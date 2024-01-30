@@ -6,7 +6,7 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
 
-@socketio("message")
+@socketio.on("message")
 def get_data(msg):
     txt_file = "D:\\Programming Projects\\my-nextjs-app\\app\\FormStudent\\backend\\DataOfStudent.txt"
     with open(txt_file , 'a') as file:
