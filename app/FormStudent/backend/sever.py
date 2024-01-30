@@ -10,7 +10,7 @@ CORS(app)
 def get_data(msg):
     txt_file = "D:\\Programming Projects\\my-nextjs-app\\app\\FormStudent\\backend\\DataOfStudent.txt"
     with open(txt_file , 'a') as file:
-        file.write(msg + "\n")
+        file.write(str(msg) + "\n")
         
 if __name__ == '__main__':
     socketio.run(app, debug=True)
