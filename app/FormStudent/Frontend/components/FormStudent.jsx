@@ -54,16 +54,8 @@ function FormStudent() {
     try {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
-      const response = await axios.post(
-        "http://127.0.0.1:5000/studentForm", // or use the correct URL for your Flask server
-        {
-          name: userInput,
-          address: userAddress,
-          course: userCourse,
-        },
-        { headers: { "Content-Type": "application/json" } }
-      );
-      setData(response.data); // ifefetch nung frontEnd yung Data After ma process ng Flask And ito yung kukuha ng mga data ni user
+      const socket = io("http://127.0.0.1:5000/");
+      socket.emit("message", { userInput, userAddress, userCourse });
     } catch (error) {
       console.error("Have an Error!", error);
     }
