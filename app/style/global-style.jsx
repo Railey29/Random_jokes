@@ -1,17 +1,26 @@
-// global-style.js
+// GlobalStyle.js
 
-// Assign the arrow function to a variable before exporting
-const globalStyle = () => (
-  <style jsx global>{`
-    body {
-      padding: 0;
-      margin: 0;
-      background-color: white;
-    }
-  `}</style>
+import React from "react";
+
+const GlobalStyle = () => (
+  <>
+    <style jsx global>{`
+      /* Reset margin and padding for html and body */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Ensure no padding at the top */
+      body {
+        padding-top: 0;
+        background-color: white;
+      }
+    `}</style>
+  </>
 );
 
-// Add a display name to your React component
-globalStyle.displayName = "GlobalStyle";
+GlobalStyle.displayName = "GlobalStyle";
 
-export default globalStyle;
+export default GlobalStyle;

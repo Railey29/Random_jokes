@@ -1,0 +1,182 @@
+.header {
+  background-color: aquamarine;
+  padding: 0;
+  margin: 0;
+  height: 35px;
+}
+.header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: Georgia, serif;
+}
+.container1 {
+  padding-top: 0;
+  margin-top: 0;
+  padding: 0;
+  margin: 0;
+  background: url("/static/Palawan.png") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 738px;
+  position: relative; /* Make sure to add this for positioning absolute elements inside */
+}
+
+.w_palawan {
+  position: absolute;
+  left: 6%;
+  top: 40%;
+  font-family: "system-ui";
+  font-size: 45px;
+  color: rgb(20, 1, 1);
+  letter-spacing: 2px;
+}
+
+.scroll_down {
+  padding: 1.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: white;
+  left: 30%;
+  top: 60%;
+  cursor: pointer;
+}
+.scroll_down::before {
+  /*Ito yung height ng Blue before pag hover mo sya*/
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+  cursor: pointer;
+}
+.scroll_down:hover::before {
+  width: 100%;
+}
+.scroll_down:hover {
+  color: #111;
+}
+.child_scroll_down {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: Georgia, serif;
+}
+.About_Palawan {
+  padding: 1.8em 1.8em;
+  border: 2px solid #17c3b2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: white;
+  left: 35%;
+  top: 60%;
+}
+.About_Palawan::before {
+  /*Ito yung height ng Blue before pag hover mo sya*/
+  content: "";
+  width: 0;
+  height: 325%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #17c3b2;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+.About_Palawan:hover::before {
+  width: 100%;
+}
+.About_Palawan:hover {
+  color: #111;
+}
+.child_About_palawan {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: Georgia, serif;
+}
+
+.container2 {
+  background-color: black;
+  height: 100vh;
+  width: 204.8vh;
+}
+.container2 div h2 {
+  color: white;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+  font-family: Georgia, serif;
+}
+.container2 div {
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 50vh;
+  font-family: Georgia, serif;
+}
+.container3 {
+  background-color: white;
+  height: 100vh;
+  width: 204.8vh;
+}
+
+.container3 div p {
+  margin: 0;
+  padding: 0;
+  color: black;
+  position: flex;
+  font-family: Georgia, serif;
+  position: relative;
+  width: 40%;
+  display: block;
+  left: 20vh;
+  top: 40vh;
+}
+.video {
+  position: relative;
+  left: 110vh;
+  top: 10vh;
+  width: 40%;
+  height: 40%;
+}
+
+.crdts {
+  position: relative;
+  left: 10%;
+  top: 40vh;
+  width: 10vh;
+}
+
+.crdts::selection {
+  left: 10%;
+  top: 40vh;
+  color: aqua;
+  width: 10vh;
+}

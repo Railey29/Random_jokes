@@ -1,16 +1,28 @@
-from flask import Flask
+from flask import Flask, request
 from flask_cors import CORS
-from flask_socketio import SocketIO
+#from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
 CORS(app)
+#run_with_ngrok(app)
 
-@socketio.on("message")
-def get_data(msg):
+@app.route('/submit', methods=['POST'])
+def get_data():
     txt_file = "D:\\Programming Projects\\my-nextjs-app\\app\\FormStudent\\backend\\DataOfStudent.txt"
-    with open(txt_file , 'a') as file:
-        file.write(str(msg) + "\n")
-        
+    data = request.get_json()
+    name = data.get('userInput')
+    address = data.get('userAddress')
+    course = data.get('userCourse')
+    fullData = {
+        'name': name,
+        'address': address,
+        'course': course
+    }
+    print(data)
+    
+    with open(txt_file, 'a') as file:
+        file.write(str(fullData) + '\n')
+    return "Data received and saved successfully"
+
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    app.run()

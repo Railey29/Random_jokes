@@ -55,8 +55,13 @@ function FormStudent() {
     try {
       console.log("Sending POST request..."); // console For Error
       // API or EndPoint
-      const socket = io("http://127.0.0.1:5000/");
-      socket.emit("message", { userInput, userAddress, userCourse });
+      const response = await axios.post("http://127.0.0.1:5000/submit", {
+        userInput,
+        userAddress,
+        userCourse,
+      });
+
+      console.log("Response from server:", response.data);
     } catch (error) {
       console.error("Have an Error!", error);
     }
