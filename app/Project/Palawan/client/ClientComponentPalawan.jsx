@@ -78,9 +78,8 @@ function ClientComponentPalawan() {
         <div>
           <h1 className={`${styles.crdts}`}>Credits:</h1>
           <p>
-            This video is from Josiah Lebente in Yotube and title of "Exploring
-            El Nido Palawan Cinematic Travel Video" and this video is all about
-            beutiful of Palawan here in the Philippines
+            This video is from Josiah Lebente in Tiktok Video This is type of
+            short Cinematic Video
           </p>
           <video controls className={styles.video}>
             <source src={elNidoVideo} type="video/mp4"></source>
