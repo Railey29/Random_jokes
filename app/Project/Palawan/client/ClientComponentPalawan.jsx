@@ -5,7 +5,7 @@ import GlobalStyle from "@/app/style/global-style";
 import styles from "./styling.module.css";
 import "animate.css";
 import { useInView } from "react-intersection-observer";
-import elNidoVideo from "./elnidoVideo.mp4";
+import NewElnido from "./NewElnido.mp4";
 
 function ClientComponentPalawan() {
   const [ref1, inView1] = useInView({
@@ -82,7 +82,7 @@ function ClientComponentPalawan() {
             short Cinematic Video
           </p>
           <video controls className={styles.video}>
-            <source src={elNidoVideo} type="video/mp4"></source>
+            <source src={NewElnido} type="video/mp4"></source>
           </video>
         </div>
       </div>
