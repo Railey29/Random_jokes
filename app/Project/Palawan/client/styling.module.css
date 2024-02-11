@@ -237,8 +237,8 @@
     display: block;
     color: white;
     position: relative;
-    left: 15vh;
-    top: 40vh;
+    left: 12vh;
+    top: 30vh;
     margin: 0;
     padding: 0;
     width: 25vh;
@@ -348,8 +348,8 @@
   }
   .scrollDownGIF {
     position: absolute;
-    left: 18vh;
-    top: 16vh;
+    left: 15vh;
+    top: 10vh;
     width: 15vh;
     z-index: 4px;
   }
