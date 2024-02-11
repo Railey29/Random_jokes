@@ -237,10 +237,11 @@
     display: block;
     color: white;
     position: relative;
-    left: 5vh;
+    left: 15vh;
     top: 40vh;
     margin: 0;
     padding: 0;
+    width: 25vh;
   }
 
   .scroll_down {
@@ -347,7 +348,7 @@
   }
   .scrollDownGIF {
     position: absolute;
-    left: 15vh;
+    left: 18vh;
     top: 16vh;
     width: 15vh;
     z-index: 4px;
