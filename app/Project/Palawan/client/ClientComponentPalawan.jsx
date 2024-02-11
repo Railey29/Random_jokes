@@ -64,8 +64,19 @@ function ClientComponentPalawan() {
         ref={ref2}
         id="container2"
       >
+        <h1 className={`${styles.w_palawan_pt2}`}>
+          Palawan is one of the attractive sites here in the
+          <span style={{ color: "#18228f" }}>Philippines</span>
+        </h1>
         <div>
           <h2>Scroll down</h2>
+        </div>
+        <div>
+          <img
+            src="/static/scroll_down.gif"
+            alt="SD"
+            className={styles.scrollDownGIF}
+          />
         </div>
       </div>
       <div

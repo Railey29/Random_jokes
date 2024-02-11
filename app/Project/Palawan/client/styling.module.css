@@ -33,6 +33,10 @@
   letter-spacing: 2px;
 }
 
+.w_palawan_pt2 {
+  display: none;
+}
+
 .scroll_down {
   padding: 1.8em 1.8em;
   border: 2px solid #17c3b2;
@@ -141,10 +145,19 @@
   top: 50vh;
   font-family: Georgia, serif;
 }
+
+.scrollDownGIF {
+  position: absolute;
+  width: 20vh;
+  top: 25vh;
+  z-index: 2;
+}
+
 .container3 {
   background-color: white;
   height: 100vh;
   width: 204.8vh;
+  z-index: 3;
 }
 
 .container3 div p {
@@ -179,4 +192,211 @@
   top: 40vh;
   color: aqua;
   width: 10vh;
+}
+
+@media screen and (max-width: 960px) {
+  .header {
+    background-color: aquamarine;
+    padding: 0;
+    margin: 0;
+    height: 35px;
+    width: 48vh;
+  }
+  .header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+  }
+  .container1 {
+    padding-top: 0;
+    margin-top: 0;
+    padding: 0;
+    margin: 0;
+    background: url("/static/Palawan.png") no-repeat center center fixed;
+    background-size: cover;
+    width: 48vh;
+    height: 100vh;
+    position: relative; /* Make sure to add this for positioning absolute elements inside */
+  }
+
+  .w_palawan {
+    position: absolute;
+    left: 6%;
+    top: -1%;
+    font-family: "system-ui";
+    font-size: 50px;
+    color: rgb(129, 5, 5);
+    letter-spacing: 3px;
+    width: 40vh;
+    display: none;
+  }
+
+  .w_palawan_pt2 {
+    display: block;
+    color: white;
+    position: relative;
+    left: 5vh;
+    top: 40vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .scroll_down {
+    padding: 1.8em 1.8em;
+    border: 2px solid #17c3b2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(58, 6, 6);
+    left: 7vh;
+    top: 25vh;
+    cursor: pointer;
+  }
+  .scroll_down::before {
+    /*Ito yung height ng Blue before pag hover mo sya*/
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17c3b2;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+    cursor: pointer;
+  }
+  .scroll_down:hover::before {
+    width: 100%;
+  }
+  .scroll_down:hover {
+    color: #111;
+  }
+  .child_scroll_down {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+  }
+  .About_Palawan {
+    padding: 1.8em 1.8em;
+    border: 2px solid #17c3b2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s;
+    z-index: 1;
+    font-family: inherit;
+    color: rgb(58, 6, 6);
+    left: 5vh;
+    top: 35vh;
+  }
+  .About_Palawan::before {
+    /*Ito yung height ng Blue before pag hover mo sya*/
+    content: "";
+    width: 0;
+    height: 325%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17c3b2;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+  }
+  .About_Palawan:hover::before {
+    width: 100%;
+  }
+  .About_Palawan:hover {
+    color: #111;
+  }
+  .child_About_palawan {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: Georgia, serif;
+  }
+
+  .container2 {
+    background-color: black;
+    width: 48vh;
+    height: 100vh;
+  }
+  .container2 div h2 {
+    color: white;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-family: Georgia, serif;
+    display: none;
+  }
+  .scrollDownGIF {
+    position: absolute;
+    left: 15vh;
+    top: 16vh;
+    width: 15vh;
+    z-index: 4px;
+  }
+  .container2 div {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 50vh;
+    font-family: Georgia, serif;
+  }
+  .container3 {
+    background-color: white;
+    width: 48vh;
+    height: 100vh;
+    z-index: 5;
+  }
+
+  .container3 div p {
+    margin: 0;
+    padding: 0;
+    color: black;
+    position: flex;
+    font-family: Georgia, serif;
+    position: relative;
+    width: 40%;
+    display: inline-block;
+    left: 15vh;
+    top: 25vh;
+  }
+  .video {
+    position: relative;
+    left: 3vh;
+    top: 40vh;
+    width: 80%;
+    height: 50%;
+  }
+
+  .crdts {
+    position: relative;
+    left: 1%;
+    top: 30vh;
+    width: 10vh;
+  }
+
+  .crdts::selection {
+    left: 1%;
+    top: 30vh;
+    color: aqua;
+    width: 10vh;
+  }
 }
