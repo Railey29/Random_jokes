@@ -1,9 +1,10 @@
+"use-client";
 import React from "react";
-import ClientComponentPalawan from "./Project/Palawan/client/ClientComponentPalawan";
+import MainComponent from "./Project/JokesGenerator/Frontend/MainComponent";
 export default function Home() {
   return (
     <>
-      <ClientComponentPalawan />
+      <MainComponent />
     </>
   );
 }

@@ -15,7 +15,7 @@ const GlobalStyle = () => (
       /* Ensure no padding at the top */
       body {
         padding-top: 0;
-        background-color: white;
+        background-color: #080f40;
       }
     `}</style>
   </>
